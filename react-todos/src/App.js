@@ -52,6 +52,7 @@ function App() {
             todos={todos}
             removeTodo={deleteTodo}
             toggleTodo={toggleTodo}
+            showAddNewTodo={showAddNewTodo}
           />
           {showAddNewTodo && <NewTodoForm submitTodo={addTodo} />}
         </div>

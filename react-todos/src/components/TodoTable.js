@@ -1,6 +1,6 @@
 import TodoRowItem from "./TodoRowItem";
 
-function TodoTable({ todos, removeTodo, toggleTodo }) {
+function TodoTable({ todos, removeTodo, toggleTodo, showAddNewTodo }) {
   return (
     <div>
       <table className="table table-hover">
@@ -24,7 +24,7 @@ function TodoTable({ todos, removeTodo, toggleTodo }) {
         </tbody>
       </table>
       <button className="btn btn-primary" onClick={toggleTodo}>
-        Add new todo
+        {!showAddNewTodo ? "Add New Todo" : "Close New Todo"}
       </button>
     </div>
   );
